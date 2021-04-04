@@ -1,16 +1,2 @@
 image:
   file: Dockerfile
-  
-ports:
-  - port: 8001
-  
-tasks:
-  -  init: mkdir node-cryptonight       &&
-           cd node-cryptonight        &&
-           touch app.js  
-           
-          
-     command: echo "Starting .gitpod.yml installation\n\n"  
-              
-              
- 

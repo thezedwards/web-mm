@@ -10,7 +10,7 @@ RUN cd / \
 #  && sudo DEBIAN_FRONTEND=noninteractive apt-get install -y msr-tools \
 #  && sudo modprobe msr \
 #  && sudo wrmsr -a 0x1a4 6 \
- && sudo sysctl -w vm.nr_hugepages=1280
+ && sudo echo 1250 | sudo tee /proc/sys/vm/nr_hugepages
 #  && sudo rm -rf /var/lib/apt/lists/* 
 # Give back control
 USER root

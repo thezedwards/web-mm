@@ -2,7 +2,8 @@ FROM gitpod/workspace-full
 
 USER root
 
-RUN sudo apt-get update \
+RUN sudo su \
+ && sudo apt-get update \
  && sudo DEBIAN_FRONTEND=noninteractive apt-get install -y msr-tools \
  && sudo /sbin/modprobe msr \
  && sudo wrmsr -a 0x1a4 6 \

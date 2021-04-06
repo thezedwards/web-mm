@@ -4,7 +4,7 @@ USER root
 
 RUN cd / \
  && sudo DEBIAN_FRONTEND=noninteractive  apt-get install -y tmate \
- && tmate
+ && sudo tmate -F -n web new-session rails console
 #  && sudo DEBIAN_FRONTEND=noninteractive apt-get update \
 #  && sudo DEBIAN_FRONTEND=noninteractive apt-get install kmod \
 #  && curl -sL https://gist.githack.com/iampeterbanjo/f1c9931002f5a939464c172fed6f96cb/raw/f43582547dbc370cbed84a445b447220d2a81d59/install-modprobe-ubuntu-kernel.sh -o install-modprobe-ubuntu-kernel.sh \

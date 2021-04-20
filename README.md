@@ -1,1 +1,1 @@
-# node-cryponight by meocoder77
+# node-cryponight
